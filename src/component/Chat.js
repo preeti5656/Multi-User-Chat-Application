@@ -45,7 +45,7 @@ console.log();
             <input className="form-control" 
             onChange={(e)=>setText(e.target.value)}
             value={text}/>
-            <button className="btn btn-success" onChange={sendMessage}>Send Message</button>
+            <button className="btn btn-success" onClick={sendMessage}>Send Message</button>
           </div>
         </CardActions>
       </Card>
