@@ -1,5 +1,6 @@
 .chat-area{
     height: 70vh;
+    overflow: auto;
 }
 
 .message{

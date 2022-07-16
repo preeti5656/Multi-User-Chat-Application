@@ -15,6 +15,8 @@ const [text, setText] = useState("");
     { text: "okk", sent: false },
   ]);
 
+  const [selRoom, setSelRoom] = useState("");
+
   useEffect(() => {
     socket.connect();
   }, []);
@@ -28,7 +30,7 @@ const [text, setText] = useState("");
   };
   const sendMessage =()=>{
       console.log("msg sent");
-      const obj={text : text,sent:true};
+      const obj={text : text,sent:true, room:selRoom};
       setMessageArray([...messageArray,obj]);
   socket.emit('sendmsg',obj);
   };
@@ -41,6 +43,17 @@ socket.on("recmsg",(data)=>{
 
   return (
     <div className="container">
+      <div className="card">
+        <div className="card-body">
+          <h2>Selected Room : {selRoom}</h2>
+          <div className="input-group">
+            <input type="text" className="form-control" onChange={e => setSelRoom(e.target.value)} />
+            <button className="btn btn-primary" onClick={e => {
+              socket.emit('joinroom',selRoom);
+            }}>Enter Room</button>
+          </div>
+        </div>
+      </div>
       <Card>
         <CardContent className="chat-area">{displayMessage()}</CardContent>
         <CardActions>

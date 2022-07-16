@@ -9,12 +9,10 @@ function App() {
       <BrowserRouter>
        
         <Routes>
+        <Route element={<Chat />} path="/" />
         <Route element={<Login />} path="login" />
-        <Route element={<Chat />} path="chat" />
         </Routes>
         </BrowserRouter>
-        
-   
   );
 }
 
