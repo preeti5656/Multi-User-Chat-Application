@@ -29,13 +29,16 @@ const [text, setText] = useState("");
   const sendMessage =()=>{
       console.log("msg sent");
       const obj={text : text,sent:true};
-      setMessageArray(obj,...messageArray);
+      setMessageArray([...messageArray,obj]);
   socket.emit('sendmsg',obj);
   };
 //for recieving message from server 
 socket.on("recmsg",(data)=>{
-console.log();
-});
+  setMessageArray([...messageArray,data]);
+  console.log();
+  });
+
+
   return (
     <div className="container">
       <Card>

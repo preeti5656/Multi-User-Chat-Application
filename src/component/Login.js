@@ -46,7 +46,7 @@ const Login = () => {
   });
 
   return (
-    <div style={{ background: "#eee", height: "100vh" }}>
+    <div style={{ background: "#purple", height: "100vh" }}>
       <div className="row h-100 justify-content-center align-items-center">
         <div className="col-md-3">
           <div className="card">
