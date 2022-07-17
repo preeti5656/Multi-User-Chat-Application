@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.chatpage{
+  background: url(https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2148999829.jpg?w=2000);
+  height: 100vh;
+}

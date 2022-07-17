@@ -42,6 +42,7 @@ socket.on("recmsg",(data)=>{
 
 
   return (
+    <div className="chatpage">
     <div className="container">
       <div className="card">
         <div className="card-body">
@@ -65,6 +66,7 @@ socket.on("recmsg",(data)=>{
           </div>
         </CardActions>
       </Card>
+    </div>
     </div>
   );
 };
