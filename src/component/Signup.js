@@ -16,7 +16,6 @@ const Signup = () => {
   // 2. Create a function for form submission
   const userSubmit = (formdata) => {
     console.log(formdata);
-  };
 
   //   3. use Formik component
   //for connection from frontend to backend
@@ -37,9 +36,9 @@ const Signup = () => {
     });
     }
   });
-};
-{
+}
   return(
+
       <section className="text-center">
           
           <div className="p-5 bg-image" style={{
