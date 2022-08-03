@@ -5,6 +5,7 @@ import Chat from "./component/Chat";
 import Login from "./component/Login";
 import Header from "./component/Header";
 import Home from "./component/Home";
+import Signup from "./component/Signup";
 function App() {
 
   return (
@@ -12,8 +13,9 @@ function App() {
        <Header/>
         <Routes>
         <Route element={<Home></Home>} path="home" />
-        <Route element={<Chat />} path="/" />
+        <Route element={<Chat />} path="/chat" />
         <Route element={<Login />} path="login" />
+        <Route element={<Signup />} path="signup" />
         </Routes>
         </BrowserRouter>
   );

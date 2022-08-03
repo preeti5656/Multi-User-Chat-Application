@@ -7,7 +7,7 @@ const Header = ({darkTheme , setdarkTheme}) => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Navbar
+          Chatting Application
         </a>
         <button
           className="navbar-toggler"
@@ -28,6 +28,11 @@ const Header = ({darkTheme , setdarkTheme}) => {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/Signup">
+                Signup
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/login">
                 Login
               </NavLink>
@@ -40,25 +45,10 @@ const Header = ({darkTheme , setdarkTheme}) => {
             </li>
             
 
-            <li className="nav-item">
-              <Switch checked={darkTheme}
-              onChange={(e, v)=>{ setdarkTheme(v);
-              }}  />
-
-            </li>
+            
 
           </ul>
-          <form className="d-flex">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          
         </div>
       </div>
     </nav>
