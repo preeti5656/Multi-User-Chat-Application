@@ -28,21 +28,21 @@
     background: rgb(66, 99, 15);
     border-radius: 13px 3px 15px 15px;
 }
-.card-body{
-    background:url(https://l450v.alamy.com/450v/2gyx5bn/emoji-character-vector-set-yellow-emoticon-happy-sad-fun-and-cute-face-collection-isolated-in-white-background-for-graphic-design-elements-2gyx5bn.jpg);
-       opacity:0.9;
+.chat-head{
+    background:linear-gradient(0deg, #ffffffc5,#ffffffac), url(https://l450v.alamy.com/450v/2gyx5bn/emoji-character-vector-set-yellow-emoticon-happy-sad-fun-and-cute-face-collection-isolated-in-white-background-for-graphic-design-elements-2gyx5bn.jpg);
+       /* opacity:0.9; */
 }
 .card{
-    background-color: rgb(50, 30, 8);
+    /* background-color: rgb(50, 30, 8); */
 }
 .chat-area
 {
-    background:url(https://i.pinimg.com/550x/e9/fe/75/e9fe75e1cd4e90bf373c58ea52b37698.jpg);
-    opacity: 0.9;
+    background:linear-gradient(0deg, #ffffff55,#ffffff4d),url(https://i.pinimg.com/550x/e9/fe/75/e9fe75e1cd4e90bf373c58ea52b37698.jpg);
+    /* opacity: 0.9; */
     
 }
 .box2{
     border-color: 2px 2px 2px 2px solid black;
     background:url(https://i.pinimg.com/550x/e9/fe/75/e9fe75e1cd4e90bf373c58ea52b37698.jpg);
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
