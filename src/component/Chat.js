@@ -48,14 +48,14 @@ socket.on("recmsg",(data)=>{
         <div className="card-body">
           <h2>Selected Room : {selRoom}</h2>
           <div className="input-group">
-            <input type="text" className="form-control" onChange={e => setSelRoom(e.target.value)} />
+            <input type="text" placeholder="Enter Room" className="form-control" onChange={e => setSelRoom(e.target.value)} />
             <button className="btn btn-primary" onClick={e => {
               socket.emit('joinroom',selRoom);
             }}>Enter Room</button>
           </div>
         </div>
       </div>
-      <Card>
+      <Card className="box2">
         <CardContent className="chat-area">{displayMessage()}</CardContent>
         <CardActions>
           <div className="input-group">
